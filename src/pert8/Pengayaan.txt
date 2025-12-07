@@ -1,0 +1,26 @@
+Setelah anda menyelesaikan kode, tolong jawab pertanyaan dibawah ini ya =
+
+
+1. Apa tujuan utama adanya interface dalam pemrograman berorientasi objek, dan bagaimana interface membantu menciptakan kontrak perilaku?
+2. Mengapa interface dapat memiliki banyak implementasi, dan apa makna konseptual dari kemampuan tersebut dalam desain sistem?
+3. Apa perbedaan mendasar antara extends dan implements dalam konteks interface, jika dilihat secara konsep tanpa melihat contoh kode?
+4. Apa alasan diperkenalkannya default method dalam interface, dan bagaimana fitur ini memengaruhi keberlangsungan (compatibility) suatu sistem yang sudah berjalan?
+5. Bagaimana konsep multiple interface memperluas fleksibilitas desain tanpa menimbulkan masalah kompleksitas yang biasa muncul pada multiple inheritance?
+
+Jawaban:
+1. Tujuan utama adanya interface dalam PBO yaitu untuk mendefinisikan fungsi atau method tanpa adanya implementasi.
+   Interface dapat membantu menciptakan kontrak perilaku dengan cara menetapkan metode yang harus
+   diimplementasikan oleh suatu class tanpa adanya implementasi isi method (cukup nama method dan parameter yang dibutuhkan jika ada)
+2. Interface dapat memiliki banyak implementasi karena dirancang sebagai abstrak murni. Jadi memungkinkan untuk kelas
+   yang berbeda dapat mengimplementasikan method yang sama tapi memiliki cara yang berbeda.
+   Makna konseptual interface dalam desain sistem yaitu suatu perantara untuk menentukan bagaimana dua komponen atau subsistem dapat saling berinteraksi.
+   Interface dapat mendefinisikan aturan, metode, atau protokol yang harus diikuti oleh komponen, sehingga komunikasi dapat dilakukan secara konsisten
+   tanpa bergantung pada detail internal masing-masing komponen.
+3. Perbedaan mendasar antara extend dan implements, yaitu extends digunakan untuk pewarisan atribut dan method yang ada di superclass ke subclass
+   dan implements digunakan untuk mengimplementasikan method yang ada di interface ke class
+4. Default method diperkenalkan supaya interface dapat menambah method tanpa merusak kode yang sudah ada.
+   Dimana hal ini dapat memengaruhi compatibility, karena dapat menjaga backward compatibility dan memungkinkan sistem
+   dapat dikembangkan secara aman tanpa perlu mengubah semua implementasi
+5. Multiple interface memberi fleksibilitas tanpa kompleksitas multiple inheritance, karena memungkinkan sebuah kelas memiliki
+   banyak perilaku tanpa mewarisi implementasi atau state dari banyak kelas. Hal ini menghindarkan masalah seperti konflik atribut,
+   ambiguitas metode, dan diamond problem yang muncul pada multiple inheritance.

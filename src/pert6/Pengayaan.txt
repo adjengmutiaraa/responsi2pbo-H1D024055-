@@ -1,0 +1,25 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+1. Apa itu abstract class dan Kenapa kita membutuhkan Abstarct class?
+2. Apa perbedaan utama antara abstract class dan class biasa dalam pemrograman berorientasi objek? 
+3. Mengapa subclass wajib mengimplementasikan semua abstract method dari parent class?
+4. Mengapa abstract method tidak boleh memiliki isi implementasi di dalam abstract class?
+5. Bagaimana abstract class dapat mendukung konsep polimorfisme, dan mengapa objek yang direferensikan melalui tipe abstract class tetap dapat menjalankan perilaku berbeda pada masing-masing subclass?
+
+Jawaban:
+1. Abstract class merupakan class yang tidak dapat diinstansiasi atau dibuat objeknya secara langsung.
+   Abstract class dibutuhkan karena dapat digunakan untuk membuat blueprint untuk subclass
+2. Abstract class hanya berupa blueprint dan wajib diimplementsikan subclass, sedangkan class merupakan implementasi kode yang sudah lengkap dan siap digunakan
+3. Karena abstract method hanyalah blueprint atau deklarasi perilaku tanpa implementasi yang lengkap, jadi subclass
+   wajib untuk mengimplementasikannya agar dapat melengkapinya supaya bisa dijalankan. Jika subclass
+   tidak mengimplementasikannya, program tidak akan lengkap dan tidak bisa dijalankan.
+4. Karena abstract method hanyalah deklarasi perilaku dan bagian dari abstraksi. Selain itu, implementasi hanya bisa dilakukan oleh subclass.
+   Jika abstract method memiliki implementasi, maka itu bukan lagi menjadi abstract method.
+5. Abstract class dapat mendukung konsep polimorfisme karena objek subclass dapat direferensikan melalui tipe abstract class,
+   tanpa menghilangkan perilaku khususnya. Ketika sebuah objek direferensikan menggunakan tipe abstract class, perilaku
+   yang dijalankan tetap bergantung pada objek sebenarnya yang berada di balik referensi tersebut. Hal ini terjadi
+   karena Java menggunakan mekanisme dynamic method dispatch, yaitu penentuan method mana yang dieksekusi dilakukan
+   saat runtime, bukan saat kompilasi. Dengan demikian, setiap subclass yang memberikan implementasi berbeda untuk
+   abstract method akan menampilkan perilaku yang berbeda pula, walaupun semuanya dipanggil melalui referensi bertipe
+   abstract class yang sama.

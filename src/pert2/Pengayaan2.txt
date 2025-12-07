@@ -1,0 +1,27 @@
+Pertanyaan Refleksi
+Setelah menyelesaikan kode, jawab pertanyaan berikut:
+
+Apa yang dimaksud dengan constructor overloading dalam pemrograman berorientasi objek?
+Bagaimana cara Java membedakan constructor yang memiliki nama sama namun parameter berbeda?
+Apa perbedaan antara mengakses variabel secara langsung (misalnya: objek.variabel = nilai) dengan menggunakan method setter?
+Jelaskan konsep encapsulation dan bagaimana method dapat membantu melindungi data dalam sebuah class!
+Mengapa constructor tidak memiliki return type, bahkan tidak menggunakan kata kunci void?
+
+Jawaban
+1. Constructor overloading dalam PBO merupakan suatu cara untuk membuat banyak constructor
+   dengan nama yang sama tapi memiliki parameter yang berbeda
+2. Java membedakan constructor yang memiliki nama sama namun parameter berbeda dengan menggunakan consctructor
+   overloading, dimana java akan membedakannya berdasarkan kombinasi dari jumlah, tipe data, dan urutan parameter
+   saat objek dibuat
+3. Perbedaan antara mengakses variabel secara langsung (objek variabel = nilai) dengan method setter:
+   - Mengakses langsung: data bisa diubah bebas dari luar class, tanpa kontrol atau validasi
+   - Menggunakan setter: perubahan nilai melewati sebuah method, sehingga dapat diberikan logika tambahan, seperti validasi, pembatasan nilai, atau efek samping lain
+4. Enkapslasi merupakan mekanisme untuk menyembunyikan data internal suatu class dan hanya memperbolehkan akses melalui method khusus.
+   Dengan menggunakan access modiefier (khususnya private) pada atribut dan menyediakan getter/setter, class bisa:
+   - mengontrol siapa yang boleh menggunakan data,
+   - melakukan validasi sebelum data diubah,
+   - mempertahankan konsistensi internal objek.
+   Dengan demikian, method berfungsi dapat melindungi data dari manipulasi sembarangan.
+5. Karena constructor bukan method, tetapi mekanisme khusus untuk menginisialisasi objek.
+   Jika constructor memiliki void, maka ia bukan constructor, tetapi sebuah method biasa
+   dengan nama sama seperti class.
